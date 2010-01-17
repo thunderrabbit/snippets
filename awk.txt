@@ -1,0 +1,18 @@
+# Reverse a string
+
+    function strrev(s) {
+        p = ""
+        for (i = length(s); i > 0; i--)
+            p = p substr(s, i, 1)
+        return p
+    }
+
+
+# SHA1 hashing using openssl
+
+    sha1 = "openssl dgst -sha1"
+    print "Lorem ipsum" |& sha1
+    close(sha1, "to")
+    sha1 |& getline hash
+    print hash
+    close(sha1)

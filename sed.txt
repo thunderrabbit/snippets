@@ -1,0 +1,10 @@
+# Sed command in heredoc (i.e. sh)
+
+    cat << EOT | sed -f - inputfile
+        s/one/two/
+    EOT
+
+
+# Sed delete using alternative delimiter
+
+    sed '\:/home/andrewlkho:d'

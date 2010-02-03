@@ -1,3 +1,4 @@
+# -----------------------------------------------------------------------------
 # Assign a string to a variable using heredoc
 
     TEXT=$(cat << "EOT"
@@ -5,7 +6,7 @@
     EOT
     )
 
-
+# -----------------------------------------------------------------------------
 # Ask a yes/no question
 
     echo -n "What is the answer? [y/N]: "
@@ -17,7 +18,7 @@
         echo "The answer is no"
     fi
 
-
+# -----------------------------------------------------------------------------
 # Read STDIN into a variable, preserving leading whitespace
 
     while IFS='' read -r LINE; do
@@ -28,7 +29,7 @@
         fi
     done
 
-
+# -----------------------------------------------------------------------------
 # A hacky urlencode() that's quick but not RFC-compliant
 
     echo -n TEXT | od -t x1 -A n | tr -d '\n' | sed -e 's/ *$//; s/ \{1,\}/%/g'

@@ -1,0 +1,14 @@
+# -----------------------------------------------------------------------------
+# Working with remote branches
+
+    Create a remote branch:
+        % git push origin origin:refs/heads/new-branch
+
+    Update local remotes (may not be needed):
+        % git fetch origin
+
+    Checkout a local tracking branch:
+        % git checkout --track -b new-branch origin/new-branch
+    
+    If you need to, you can delete the remote branch with:
+        % git push origin :heads/new-branch
